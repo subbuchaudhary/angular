@@ -1,0 +1,36 @@
+﻿{
+  "employeeslist": {
+    "employees": [
+      {
+        "name": "Subbu",
+        "sex": "Male",
+        "salary": 150000.899
+      },
+      {
+        "name": "Gayathri",
+        "sex": "Female",
+        "salary": 120000
+      },
+      {
+        "name": "Chandu",
+        "sex": "Male",
+        "salary": 105000.89
+      },
+      {
+        "name": "Sai",
+        "sex": "Male",
+        "salary": 103000
+      },
+      {
+        "name": "Mahesh",
+        "sex": "Male",
+        "salary": 90000
+      },
+      {
+        "name": "Gopi",
+        "sex": "Male",
+        "salary": 75000
+      }
+    ]
+  }
+}

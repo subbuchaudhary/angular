@@ -1,0 +1,38 @@
+<h2> Contact Us </h2>
+<pre><address>Address: 2840 Keller Springs Rd, Carrollton, TX 75006</address>
+Phone:(214) 705-3015</pre>
+<h2>Company Info</h2>
+<pre>
+<address>
+<b>Saibersys Inc. </b>
+5750 Genesis court # 140	
+Frisco, TX, United States 
+</address>
+Phone: 972-819-9084
+Email: <a href="mailto:recruit@saibersys.com">recruit@saibersys.com</a>
+Web Site: <a href="www.saibersys.com">www.saibersys.com</a>
+</pre>
+
+In addition to this info, you want to get the states data in India, please press button: 
+<input type="button" value="Get" ng-click="displaydata()" /><br />
+<br />
+<table border="1" style="border-collapse:collapse">
+    <thead>
+        <tr>
+            <th>State</th>
+            <th>Abbrevation</th>
+            <th>Area</th>
+            <th>Largest City</th>
+            <th>Capital</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="details in statesInfo">
+            <td>{{details.name}}</td>
+            <td>{{details.abbr}}</td>
+            <td>{{details.area}}</td>
+            <td>{{details.largest_city}}</td>
+            <td>{{details.capital}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,38 @@
+<!Doctype html>
+<html ng-app="myModule">
+<head>
+<title>Employee</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-controller="myController" ng-init="myFunction()">
+<table border="1" style="border-collapse:collapse">
+<theader>
+<tr>
+<th>S.No</th>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Gender</th>
+</tr>
+</theader>
+<tbody>
+<tr ng-repeat="emp in names">
+<td>{{$index+1}}</td>
+<td>{{emp.firstName}}</td>
+<td>{{emp.lastName}}</td>
+<td>{{emp.gender}}</td>
+</tr>
+</tbody>
+</table>
+<script>
+var myApp = angular.module("myModule",[])
+		.controller("myController", function($scope){
+			$scope.myFunction = function() {
+		var names=[{firstName:'subbu', lastName:'Nelakudhiti', gender:'Male'},
+				{firstName:'Nivas', lastName:'N', gender:'Male'}];
+				$scope.names = names;
+					}
+			
+				});
+</script>
+</body>
+</html>
